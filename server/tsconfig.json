@@ -16,8 +16,13 @@
     "moduleDetection": "force",
     "skipLibCheck": true,
     "rootDir": "./src",
-    "outDir": "./dist"
+    "outDir": "./dist",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
   },
-  "include": ["src/**/*"],
+  "include": [
+    "src/**/*",
+    "node_modules/@types/node/module.d.ts"
+  ],
   "exclude": ["node_modules", "dist"]
 }
